@@ -1,0 +1,124 @@
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.part1{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.368);
+    background-size: cover;
+    background-position: center;
+}
+.part1 h3{
+    font-size: 20px;
+    color: rgba(48, 43, 43, 0.377);
+    margin-bottom: 20px;
+    position: absolute;
+    top: 120px;
+}
+.input_area{
+    position: relative;
+}
+.input_area input{
+    width: 340px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.642);
+    color: white;
+    
+}
+.input_area .copy_btn{
+    right: 0px;
+    width: 50px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20%;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+}
+.input_area .copy_btn img{
+    width: 18px;
+    height: 18px;
+}
+.Generator{
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 19px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    
+
+}
+.Generator img{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+
+}
+.part2{
+    width: 400px;
+    height: 400px;
+    background-image: url(undraw_Beach_day_cser.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.Generator {
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 19px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.Generator:hover {
+    scale: 1.01;
+    color: white;
+    outline: 1px solid black;
+    box-shadow: 4px 5px 17px -4px #0f9204, 4px 5px 17px -4px #0f9204;
+}
+
+.Generator::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(#0f9204,#0f9204);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.Generator:hover::before {
+    width: 250%;
+}
