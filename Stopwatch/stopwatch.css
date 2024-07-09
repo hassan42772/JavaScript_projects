@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 80vh;
+   
+    border-radius: 10px;
+    background: url(Stopwatch.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.MainContainer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 8vh;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: black;
+    /* margin-bottom: 1rem; */
+    margin-top: 2rem;
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.button_container button{
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+button:active{
+    background-color: #00000048;
+    color: #fff;
+}
