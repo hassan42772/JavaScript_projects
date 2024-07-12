@@ -1,0 +1,191 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(top-view-desk-concept-with-notepad_23-2148604955.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+
+}
+
+.CalculatorMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  min-height: 73vh;
+  background-color: rgba(0, 0, 0, 0.491); 
+  gap: 15px;  
+  border-radius: 20px;
+  padding: 10px;
+}
+.CalculatorMain input{
+    width: 93%;
+    height: 70px;
+    font-size: 27px;
+    text-align: right;
+    padding-right: 13px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.192);
+    color: white;
+    border-radius: 12px;
+    background: none;
+    position: relative;
+}
+.CalculatorMain input::placeholder{
+   
+    font-size: 20px;
+    text-align: center;
+}
+.input:focus,
+input:valid {
+  outline: none;
+  --angle: 0deg;
+  border-radius: 15px;
+  border: 3px solid white;
+  border-image: conic-gradient(from var(--angle), #8B0000, #808000, #556B2F, aqua, #008080, #000080, #8B008B,#800000) 1;
+  animation: 3s rotate9234 linear infinite;
+}
+
+@keyframes rotate9234 {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.input:focus~label,
+input:valid~label {
+  transform: translateY(235%) scale(1);
+  background-color: #e8e8e8;
+  padding: 0 .2em;
+  color: #2196f3;
+}
+.btnContainer1{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.192);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    --border-radius: 30px;
+ --border-width: 4px;
+ appearance: none;
+ z-index: 2;
+    position: relative;
+}
+
+button::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+        #8B0000, #808000, #556B2F, aqua, #008080, #000080, #8B008B,#800000
+       );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+   }
+   
+   button:hover::after {
+    animation-play-state: running;
+   }
+   
+   @keyframes rotate-hue {
+    to {
+     filter: hue-rotate(1turn);
+    }
+   }
+   
+   button,
+   button::after {
+    box-sizing: border-box;
+   }
+   
+   button:active {
+    --border-width: 5px;
+   }
+
+
+.btnContainer2{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnContainer3{
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnContainer4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnContainer5{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnContainer5 button:nth-child(3){
+    width: 124px;
+    border-radius: 20px;
+}
