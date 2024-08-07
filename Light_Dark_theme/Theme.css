@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primaryDark-color: #212121;
+    --secondaryDark-color: #fff;
+}
+.dark-theme{
+    --primaryDark-color: #fff;
+    --secondaryDark-color:  #212121;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 100%;
+    background: var(--primaryDark-color);
+}
+
+section .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    border: 1px solid var(--secondaryDark-color);
+    border-radius: 20px;
+    background: var(--secondaryDark-color);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+   
+}
+.container h1{
+    color: var(--primaryDark-color);
+    font-size: 20px;
+    font-weight: bold;
+ 
+}
+.card img{
+    width: 180px;
+    /* height: 200px; */
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+
+.card p{
+    color: var(--secondaryDark-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card .show{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: var(--primaryDark-color);
+    color: var(--secondaryDark-color);
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .mode{
+    padding: 1px 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+ 
+    color: var(--primaryDark-color);
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.card .mode i{
+    margin-bottom: 13px;
+    font-size: 18px;
+    color: var(--primaryDark-color);
+    background-color: transparent;
+}
